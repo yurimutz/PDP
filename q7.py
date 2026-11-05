@@ -1,14 +1,17 @@
-import aula
+import q6 as q6
 
-def q7(n):
-    if n == 0:
+def sequencia(n):
+    if(n == 0):
         return 1
 
-    return (1 / aula.fatorial(n)) + q7(n-1);
+    return 1 / q6.fatorial(n) + sequencia(n-1)
 
 def main():
+    print("Hello, World!")
+
     num = int(input())
-    print(q7(num))
+    print(sequencia(num))
+
 
 if __name__ == "__main__":
     main()

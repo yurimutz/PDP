@@ -1,17 +1,21 @@
-import aula
+def negativos(sum):
+    num = int(input())
 
-def q8(lista):
-    if(aula.head(lista) == 0):
-        return 0
-    if(aula.head(lista) < 0):
-        return aula.head(lista) + q8(aula.tail(lista))
+    if(num == 0):
+        return sum
     
-    return q8(aula.tail(lista))
+    if(num > 0):
+        return negativos(sum)
+    else:
+        return negativos(sum+num)
+             
 
 def main():
+    print("Hello, World!")
 
-    numeros = [10, 20, 30, 40, -10, 0]
-    print(q8(numeros))
+    sum = 0
+    print(negativos(sum))
+
 
 if __name__ == "__main__":
     main()
