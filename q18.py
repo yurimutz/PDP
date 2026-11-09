@@ -1,6 +1,7 @@
 import base as base
 import q13 as q13
 
+# fiz sem a q13
 def invertelista(lista1, lista2):
     if not lista1:
         return lista2

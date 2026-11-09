@@ -8,9 +8,13 @@ def inverte(palavra, aux):
 
     return inverte(base.init(palavra), aux + base.last(palavra))
 
-def geraPalindromo(palavra):
-    return palavra + inverte(palavra, '')
+# nao e funcional
+# def geraPalindromo(palavra):
+#     return palavra + inverte(palavra, '')
     
+def geraPalindromo(palavra):
+    return inverte(palavra, palavra)
+
 def main():
     print("Hello, World!")
 
