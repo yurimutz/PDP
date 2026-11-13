@@ -24,7 +24,7 @@ def aux(lista):
     if not lista:
         return []
 
-    return [base.head(lista), sup_qtd(lista, base.head(lista), 0)]
+    return (base.head(lista), sup_qtd(lista, base.head(lista), 0))
 
 
 def aux2(lista):
@@ -38,7 +38,7 @@ def primeFactors(num):
 
 def main():
     print("Hello, World!")
-    print(primeFactors(61))
+    print(primeFactors(28))
 
 
 if __name__ == "__main__":

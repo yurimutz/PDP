@@ -9,13 +9,13 @@ def matches(lista, consoantes):
     if q21.consoantList(consoantes, base.head(lista)):
         return [base.head(lista)] + matches(base.tail(lista), consoantes)
 
-    return matches(consoantes, base.tail(lista))
+    return matches(base.tail(lista),consoantes)
     
 
 def main():
     print("Hello, World!")
 
-    dic = ['arara', 'oi', 'ola', 'arara']
+    dic = ['arara', 'oi', 'ola', 'arara', 'araaaaar']
 
     print(matches(dic, 'rr'))
 

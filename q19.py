@@ -7,10 +7,6 @@ def inverte(palavra, aux):
         return aux
 
     return inverte(base.init(palavra), aux + base.last(palavra))
-
-# nao e funcional
-# def geraPalindromo(palavra):
-#     return palavra + inverte(palavra, '')
     
 def geraPalindromo(palavra):
     return inverte(palavra, palavra)

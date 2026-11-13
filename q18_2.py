@@ -20,6 +20,7 @@ def invertelista_acc(lista1, lista2):
 def main():
     print("Hello, World!")
 
+    # lista1 = ['b', 'o', 'm']
     lista1 = ['b', 'o', 'm']
     lista2 = []
 
