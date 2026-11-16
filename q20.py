@@ -1,6 +1,7 @@
 import q14 as q14
 import base as base
 
+# retorna lista
 def strip(lista1, lista2):
     if not lista2:
         return []
@@ -9,6 +10,16 @@ def strip(lista1, lista2):
         return strip(lista1, base.tail(lista2))
 
     return [base.head(lista2)] + strip(lista1, base.tail(lista2))
+
+# retorna string
+# def strip(lista1, lista2):
+#     if not lista2:
+#         return ""
+
+#     if q14.verifica(lista1, base.head(lista2)):
+#         return strip(lista1, base.tail(lista2))
+
+#     return base.head(lista2) + strip(lista1, base.tail(lista2))
 
 def main():
     print("Hello, World!")
